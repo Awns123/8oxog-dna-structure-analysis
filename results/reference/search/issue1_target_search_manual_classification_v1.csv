@@ -1,0 +1,6 @@
+pdb_id,method,topology,8OG_pair_state,decision,reason,official_url
+178D,X-RAY DIFFRACTION,DNA duplex,8OG:A Saenger 09-IX,INCLUDE_EXISTING_TARGET,Only protein-free X-ray duplex 8OG:A hit; already the primary target and not a new independent family,https://www.rcsb.org/structure/178D
+183D,X-RAY DIFFRACTION,DNA duplex,8OG:C Watson-Crick-like,SEPARATE_CASE_NOT_8OGA_REPLICATE,Partner is C rather than A and it is not a matched repeat of 178D,https://www.rcsb.org/structure/183D
+8BAF,X-RAY DIFFRACTION,non-canonical quadruplex,no comparable duplex 8OG:A target,EXCLUDE_FROM_MATCHED_DUPLEX_SET,Different topology and experimental question,https://www.rcsb.org/structure/8BAF
+8BAG,X-RAY DIFFRACTION,copper-bound non-canonical quadruplex,no comparable duplex 8OG:A target,EXCLUDE_FROM_MATCHED_DUPLEX_SET,Different topology plus copper-bound condition; same deposited study family as 8BAF,https://www.rcsb.org/structure/8BAG
+7WGW,SOLUTION NMR,cGMP fill-in vacancy G-quadruplex,sheared 8OG:A Saenger 11-XI,EXCLUDE_FROM_MATCHED_XRAY_DUPLEX_SET,Different method and quadruplex topology; useful only as a separate exploratory context,https://www.rcsb.org/structure/7WGW

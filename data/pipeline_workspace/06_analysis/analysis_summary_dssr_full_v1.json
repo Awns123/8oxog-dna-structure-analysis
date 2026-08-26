@@ -1,0 +1,172 @@
+{
+  "status": "PASS_PIPELINE_CONCLUSION_REDUCED_STRETCH_CENTERED",
+  "scope": "pair_internal_six_parameter_question_only",
+  "reference": {
+    "n_structures": 18,
+    "n_pairs": 230,
+    "AT_pairs": 105,
+    "GC_pairs": 125,
+    "change_from_archived_229": "+1 A:T pair recognized by DSSR in 3IXN"
+  },
+  "primary_targets": {
+    "111D_site4": {
+      "D_diagonal": 42.74139526361205,
+      "D_robust": 45.67014273390481,
+      "D_mahalanobis": 40.1108400759465,
+      "D_diagonal_percentile": 100.0
+    },
+    "111D_site9": {
+      "D_diagonal": 39.88591528319193,
+      "D_robust": 42.59381188077425,
+      "D_mahalanobis": 37.34815599049526,
+      "D_diagonal_percentile": 100.0
+    },
+    "178D_site4": {
+      "D_diagonal": 45.69716781375925,
+      "D_robust": 47.98154521101411,
+      "D_mahalanobis": 42.809106823681645,
+      "D_diagonal_percentile": 100.0
+    },
+    "178D_site9": {
+      "D_diagonal": 41.99631866315129,
+      "D_robust": 44.446964981350774,
+      "D_mahalanobis": 39.331542270229114,
+      "D_diagonal_percentile": 100.0
+    },
+    "183D_primary": {
+      "D_diagonal": 0.9177458162557309,
+      "D_robust": 1.0764433230131019,
+      "D_mahalanobis": 0.8204795481806458,
+      "D_diagonal_percentile": 13.599999999999996
+    }
+  },
+  "primary_matched": {
+    "site4": {
+      "delta_D_diagonal": 2.955772550147202,
+      "radial_relative_increase_pct_D_diagonal": 6.915479787024181,
+      "D_direct_diagonal": 7.703378406075526,
+      "delta_D_robust": 2.311402477109297,
+      "delta_D_mahalanobis": 2.698266747735147
+    },
+    "site9": {
+      "delta_D_diagonal": 2.110403379959365,
+      "radial_relative_increase_pct_D_diagonal": 5.291099288998131,
+      "D_direct_diagonal": 3.9996252061437114,
+      "delta_D_robust": 1.8531531005765274,
+      "delta_D_mahalanobis": 1.9833862797338568
+    }
+  },
+  "signed_6_direction": {
+    "site4": 4.268721491778386,
+    "site9": 2.307803876345311
+  },
+  "structure_equal_direction": {
+    "site4": 2.813068502505004,
+    "site9": 1.9578137322526672
+  },
+  "leave_one_structure_out": {
+    "site4_all_positive": true,
+    "site4_min_difference": 2.5835806586060457,
+    "site4_max_difference": 3.443407147792506,
+    "site9_all_positive": true,
+    "site9_min_difference": 1.9041501962701517,
+    "site9_max_difference": 2.355694622269212
+  },
+  "leave_one_variable_out": {
+    "omit_abs_stretch_A_site4_difference": -2.838636139639789,
+    "omit_abs_stretch_A_site9_difference": -0.733147559051563,
+    "omit_abs_opening_deg_site4_difference": 7.127114481870436,
+    "omit_abs_opening_deg_site9_difference": 3.901572162898809,
+    "omit_abs_propeller_deg_site4_difference": 2.948654496102904,
+    "omit_abs_propeller_deg_site9_difference": 2.1171229890257592,
+    "all_differences_positive": false,
+    "interpretation": "Removing stretch reverses the 178D-minus-111D radial direction at both sites; the additional difference is therefore stretch-centered, not a variable-robust global increase."
+  },
+  "bootstrap": [
+    {
+      "site": 4,
+      "metric": "D_diagonal",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 3.0435289859022774,
+      "ci95_low": 1.5196135645136986,
+      "ci95_high": 4.994123978794286,
+      "fraction_positive": 1.0
+    },
+    {
+      "site": 4,
+      "metric": "D_robust",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 2.235052637105749,
+      "ci95_low": -0.023981178317785054,
+      "ci95_high": 5.550226401092073,
+      "fraction_positive": 0.9736
+    },
+    {
+      "site": 4,
+      "metric": "D_mahalanobis",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 2.8540128180327393,
+      "ci95_low": 0.5898020913843226,
+      "ci95_high": 5.347062716492719,
+      "fraction_positive": 0.9916
+    },
+    {
+      "site": 9,
+      "metric": "D_diagonal",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 2.1515797313656506,
+      "ci95_low": 1.4439766858824796,
+      "ci95_high": 3.2025157976101077,
+      "fraction_positive": 1.0
+    },
+    {
+      "site": 9,
+      "metric": "D_robust",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 1.8238089445541092,
+      "ci95_low": 0.7647444040897027,
+      "ci95_high": 3.5479707171462085,
+      "fraction_positive": 0.9996
+    },
+    {
+      "site": 9,
+      "metric": "D_mahalanobis",
+      "iterations": 5000,
+      "seed": 20260731,
+      "difference_definition": "178D_minus_111D",
+      "median": 2.0450363082787533,
+      "ci95_low": 0.8919242134524803,
+      "ci95_high": 3.68250758225453,
+      "fraction_positive": 0.9984
+    }
+  ],
+  "claim_gate": {
+    "all_111D_178D_primary_D_diagonal_above_reference_97_5": true,
+    "absolute_3_delta_positive_both_sites": true,
+    "signed_6_delta_positive_both_sites": true,
+    "structure_equal_delta_positive_both_sites": true,
+    "loo_positive_both_sites": true,
+    "leave_one_variable_positive_all": false,
+    "core_shared_extreme_deviation_retained": true,
+    "generic_additional_global_deviation_claim_allowed": false,
+    "stretch_centered_additional_difference_claim_allowed": true
+  },
+  "required_caveats": [
+    "111D and 178D are one crystal structure each; the two sites are not independent replicates.",
+    "Radial relative increase is not the total difference between structures and is not a biological effect size.",
+    "3IXN is the only normal reference with substantial archived-versus-current DSSR differences; current coordinate-derived values and the extra WC pair were retained by the locked rule.",
+    "The 178D-minus-111D radial direction reverses when stretch is omitted; describe the added difference as stretch-centered rather than a general global increase.",
+    "This run does not reproduce legacy v5 base-pair-step D_step analyses.",
+    "A successful rerun establishes computational reproducibility, not population-level generalization."
+  ]
+}

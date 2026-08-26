@@ -1,0 +1,6 @@
+scope,archived_count,current_dssr_count,status,interpretation,resolution
+all_endpoint_groups,263,264,MIXED,"Most endpoint groups match; differences are isolated to 183D symmetry handling and 3IXN","See category rows"
+matched_within_0.001,245,245,RESOLVED,"Archived and current DSSR values agree to displayed precision","Retain current coordinate-derived values"
+183D_ASU_symmetry_pairs,5,0,EXPECTED_ASU_LIMITATION,"The ASU category references crystallographic symmetry mates that are not complete Cartesian pairs in the ASU coordinate file","Use RCSB 183D assembly1; preserve both symmetry-equivalent raw rows and select one representative"
+3IXN_extra_pair,0,1,PROGRAM_OR_VERSION_RECOGNITION_DIFFERENCE,"Current DSSR recognizes one additional central Watson-Crick A:T pair","Retain under locked coordinate-derived rule; report 230 reference pairs and run 3IXN-excluded sensitivity"
+3IXN_value_differences,9,9,PROGRAM_OR_VERSION_DERIVED_VALUE_DIFFERENCE,"Current coordinate-derived DSSR values differ from archived mmCIF-derived values; exact upstream cause is not proven","Do not label either source wrong; retain current DSSR consistently and report 3IXN-excluded sensitivity"

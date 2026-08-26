@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "analysis_scope": "post-hoc matched structural reanalysis",
+  "reference_pairs": {
+    "total": 230,
+    "AT": 105,
+    "GC": 125
+  },
+  "independent_target_structures": {
+    "111D": 1,
+    "178D": 1,
+    "183D": 1
+  },
+  "values": {
+    "site4_D_111D": 32.649183741483206,
+    "site4_D_178D": 36.91790523326159,
+    "site4_delta_D": 4.268721491778386,
+    "site4_direct_D": 7.409744001491987,
+    "site4_stretch_direct_share_pct": 73.43762086511576,
+    "site4_omit_stretch_delta_D": -1.294562971951997,
+    "site9_D_111D": 30.882520286120926,
+    "site9_D_178D": 33.19032416246623,
+    "site9_delta_D": 2.3078038763453073,
+    "site9_direct_D": 4.194299958105134,
+    "site9_stretch_direct_share_pct": 69.2448923036517,
+    "site9_omit_stretch_delta_D": -0.6282684417822395,
+    "183D_D": 1.3704343562707066
+  },
+  "183D_reference_rank": {
+    "count_at_or_below": 24,
+    "reference_count": 125,
+    "empirical_percentile_pct": 19.2
+  },
+  "claim_gate": {
+    "shared_large_pair_internal_departure": true,
+    "generic_oxidation_specific_global_departure": false,
+    "stretch_centered_additional_difference_in_this_matched_case": true,
+    "population_level_causal_effect": false
+  },
+  "validation_checks": {
+    "reference_pair_count_230": true,
+    "AT_reference_count_105": true,
+    "GC_reference_count_125": true,
+    "primary_target_count_5": true,
+    "regression_site4_D_111D": true,
+    "regression_site4_D_178D": true,
+    "regression_site4_delta_D": true,
+    "regression_site4_direct_D": true,
+    "regression_site4_stretch_direct_share_pct": true,
+    "regression_site4_omit_stretch_delta_D": true,
+    "regression_site9_D_111D": true,
+    "regression_site9_D_178D": true,
+    "regression_site9_delta_D": true,
+    "regression_site9_direct_D": true,
+    "regression_site9_stretch_direct_share_pct": true,
+    "regression_site9_omit_stretch_delta_D": true,
+    "regression_183D_D": true,
+    "183D_reference_rank_24_of_125": true,
+    "stretch_omission_reverses_both_sites": true
+  }
+}

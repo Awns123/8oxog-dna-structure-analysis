@@ -1,0 +1,40 @@
+amendment_version: "1.1"
+amended_at_kst: "2026-08-04T11:25:00+09:00"
+parent_lock_file: "analysis_plan_lock_v1.yaml"
+parent_lock_sha256: "e857e2cd7c4e45e0406b2f315cccd8362d5b664cdf49f89d2f8e30d915e91ece"
+stage_when_detected: "after input download and before any 22-file production DSSR run"
+amendment_type: "target_residue_identifier_correction"
+reason: >-
+  Direct audit of the official 111D mmCIF showed that matched site 4 is
+  A.DA4 paired with B.DG21. The parent lock accidentally transposed the
+  component identities as A.DG4 and B.DA21. This is an input-identifier
+  correction, not a result-dependent inclusion or analysis change.
+correction:
+  structure: "111D"
+  site: 4
+  replace_expected_pair: ["A.DG4", "B.DA21"]
+  with_expected_pair: ["B.DG21", "A.DA4"]
+  fixed_orientation: "B.DG21_to_A.DA4"
+additional_symmetry_clarification:
+  structure: "183D-assembly1"
+  reason: >-
+    The official assembly contains two symmetry-equivalent physical copies:
+    A.8OG4--A-2.DC7 and A.DC7--A-2.8OG4. Their original 3DNA parameters
+    become identical after normalization to 8OG-to-C orientation. An
+    unordered endpoint key alone cannot collapse them because the assembly
+    chain identifiers differ.
+  primary_representative: ["A.8OG4", "A-2.DC7"]
+  symmetry_equivalent_audit_copy: ["A-2.8OG4", "A.DC7"]
+  analysis_rule: >-
+    Preserve both raw DSSR rows. Use the pair with 8OG on original assembly
+    chain A as the single analytical representative and retain the second
+    as a symmetry-equivalent audit row. Confirm equality after orientation
+    normalization before statistics.
+  expected_raw_pair_count: 2
+  expected_analytical_pair_count: 1
+unchanged:
+  - "all 21 structure IDs and roles"
+  - "DSSR version, executable hash, and command options"
+  - "all reference-pair inclusion and weighting rules"
+  - "all orientation-reversal rules"
+  - "all claim gates and interpretation limits"

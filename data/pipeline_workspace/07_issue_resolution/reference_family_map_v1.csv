@@ -1,0 +1,19 @@
+pdb_id,family_A_exact_sequence_or_same_series,family_B_conservative_DDD_related,rationale
+119D,119D,119D,unique reference entry under both definitions
+158D,158D,158D,unique reference entry under both definitions
+167D,167D,167D,unique reference entry under both definitions
+1BNA,DDD_exact_sequence,DDD_related,Dickerson-Drew dodecamer sequence family
+1D29,1D29,1D29,unique reference entry under both definitions
+1D49,1D49,1D49,unique reference entry under both definitions
+1D65,1D65,1D65,unique reference entry under both definitions
+1D89,1D89,1D89,unique entry but contains multiple duplexes; structure-level weighting still required
+1D98,1D98,1D98,unique reference entry under both definitions
+1DN9,1DN9,1DN9,unique reference entry under both definitions
+1JGR,DDD_exact_sequence,DDD_related,Dickerson-Drew dodecamer sequence family
+2BNA,DDD_exact_sequence,DDD_related,Dickerson-Drew dodecamer sequence family
+3BSE,3BSE,3BSE,unique reference entry under both definitions
+3IXN,3IXN,3IXN,unique reference entry under both definitions
+463D,DDD_exact_sequence,DDD_related,Dickerson-Drew dodecamer sequence family and calcium-related context
+476D,calcium_series_476D_477D,DDD_related,same publication and related calcium-form series as 477D
+477D,calcium_series_476D_477D,DDD_related,same publication and related calcium-form series as 476D
+4C64,DDD_exact_sequence,DDD_related,Dickerson-Drew dodecamer sequence family

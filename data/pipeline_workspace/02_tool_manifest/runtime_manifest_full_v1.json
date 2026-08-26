@@ -1,0 +1,17 @@
+{
+  "run_date": "2026-08-04",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "dssr_version": "v2.9.1-2026jul09",
+  "dssr_options": [
+    "--more",
+    "--json",
+    "--nt-mapping=8OG:g"
+  ],
+  "dssr_executable_sha256": "2fbf5dd32df8a66753486b00fdb2388e4188a81f9ed7251378b2fa889b82a7dc",
+  "analysis_type": "REFERENCE_AWARE_REPRODUCTION",
+  "original_coordinate_notebook_execution": "stdlib shared-namespace executor; 8/8 code cells executed; final assertions required",
+  "public_reader_notebook_execution": "stdlib shared-namespace executor; 4/4 code cells executed; current release notebook"
+}

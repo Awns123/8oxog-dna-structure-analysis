@@ -1,0 +1,6 @@
+target_role,reference_group,D_signed_six,reference_count_at_or_below_D,reference_pair_count,empirical_percentile_pct
+111D_site4,AT_pair,32.649183741483206,105,105,100.0
+178D_site4,AT_pair,36.91790523326159,105,105,100.0
+111D_site9,AT_pair,30.882520286120926,105,105,100.0
+178D_site9,AT_pair,33.19032416246623,105,105,100.0
+183D_primary,GC_pair,1.3704343562707066,24,125,19.2

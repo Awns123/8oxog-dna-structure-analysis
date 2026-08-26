@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXTRACTION_TARGETS",
+  "dssr_all_pair_rows_22_files": 264,
+  "reference_structure_count": 18,
+  "reference_canonical_pair_count": 230,
+  "reference_altloc_excluded_pair_count": 230,
+  "reference_terminal_excluded_pair_count": 194,
+  "target_role_counts": {
+    "111D_site4": 1,
+    "111D_site9": 1,
+    "178D_site4": 1,
+    "178D_site9": 1,
+    "183D_primary": 1,
+    "183D_symmetry_audit_copy": 1
+  },
+  "target_primary_analytical_count": 5,
+  "target_raw_audit_count": 6,
+  "183D_ASU_pair_count": 0,
+  "183D_assembly_pair_count": 10,
+  "archived_pair_row_count_21_asu_files": 263,
+  "archived_vs_dssr_status_counts": {
+    "ARCHIVED_ONLY_SYMMETRY_REQUIRED": 5,
+    "DSSR_ONLY_RECOGNITION": 1,
+    "MATCH_0.001": 245,
+    "VALUE_DIFFERENCE": 9
+  }
+}

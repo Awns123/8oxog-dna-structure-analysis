@@ -1,0 +1,19 @@
+{
+  "status": "PASS_PROTEIN_FREE_8OG_DSSR_SCREEN",
+  "entry_count": 26,
+  "coordinate_input_count": 30,
+  "all_dssr_exit_zero": true,
+  "entries_with_DSSR_8OG_A_pair": [
+    "178D",
+    "7WGW"
+  ],
+  "xray_entries_with_DSSR_8OG_A_pair": [
+    "178D"
+  ],
+  "limitations": [
+    "NMR structures remain a separate methodological stratum from X-ray structures.",
+    "DSSR pair recognition is a screening rule, not a manual biological classification.",
+    "Crystal-symmetry pairs may require assembly coordinates; assembly1 was also screened for X-ray entries.",
+    "A candidate must still be manually reviewed for duplex topology, sequence, conditions, and experimental-family independence."
+  ]
+}

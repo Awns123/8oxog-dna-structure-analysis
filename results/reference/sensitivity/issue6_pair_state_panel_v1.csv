@@ -1,0 +1,6 @@
+﻿target_role,input_stem,pdb_id,dssr_pair_index,nt1,nt2,comp1,comp2,bp,name,Saenger,LW,DSSR,chi1,conf1,pucker1,lambda1,chi2,conf2,pucker2,lambda2,C1C1_dist,N1N9_dist,C6C8_dist,CNNC_torsion,hbonds_num,hbonds_desc,interBase_angle,planarity
+111D_site4,111D,111D,4,A.DA4,B.DG21,DA,DG,A+G,--,09-IX,cWH,cW+M,-101.059,anti,~C2'-endo,53.641,85.611,syn,~C2'-endo,34.546,11.006,8.941,8.292,-14.249,2,"N6(amino)-O6(carbonyl)[2.51],N1*N7[2.87]",17.003,0.209
+178D_site4,178D,178D,4,A.DA4,B.8OG21,DA,8OG,A+g,--,09-IX,cWH,cW+M,-95.932,anti,~C2'-endo,50.183,78.315,syn,~C2'-endo,46.317,10.54,8.582,7.645,-13.064,2,"N6(amino)-O6(carbonyl)[3.06],N1*N7[2.70]",20.47,0.248
+111D_site9,111D,111D,9,A.DG9,B.DA16,DG,DA,G+A,--,09-IX,cHW,cM+W,80.404,syn,~C2'-endo,35.054,-106.705,anti,~C2'-endo,59.541,10.607,8.672,8.076,-17.549,2,"N7*N1[2.77],O6(carbonyl)-N6(amino)[2.61]",20.756,0.256
+178D_site9,178D,178D,9,A.8OG9,B.DA16,8OG,DA,g+A,--,09-IX,cHW,cM+W,82.928,syn,~C2'-endo,41.871,-106.717,anti,~C2'-endo,55.483,10.402,8.48,7.743,-17.376,2,"N7*N1[2.48],O6(carbonyl)-N6(amino)[2.67]",18.77,0.224
+183D_primary,183D-assembly1,183D,4,A.8OG4,A-2.DC7,8OG,DC,g-C,WC,19-XIX,cWW,cW-W,-55.251,anti,----,54.374,-120.553,anti,----,52.771,10.756,9.041,9.937,-27.653,3,"O6(carbonyl)-N4(amino)[2.84],N1(imino)-N3[2.95],N2(amino)-O2(carbonyl)[2.83]",7.118,0.162

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.matplotlib-cache/
+data/pipeline_workspace/01_raw_mmcif/full_v1_2026-08-04/*.cif
+data/pipeline_workspace/03_dssr_json/
+data/pipeline_workspace/05_qc/reproducibility_rerun_full_v1/
+data/pipeline_workspace/08_logs/

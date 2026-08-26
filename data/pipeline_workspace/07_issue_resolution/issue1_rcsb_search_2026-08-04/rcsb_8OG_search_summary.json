@@ -1,0 +1,29 @@
+{
+  "status": "PASS_RCSB_SEARCH_SNAPSHOT",
+  "as_of_utc": "2026-08-04T03:00:46.939Z",
+  "official_search_endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+  "query_counts": {
+    "all_polymer_8OG": 270,
+    "protein_free_polymer_8OG": 26,
+    "protein_free_xray_polymer_8OG": 4
+  },
+  "protein_free_xray_ids": [
+    "178D",
+    "183D",
+    "8BAF",
+    "8BAG"
+  ],
+  "protein_free_xray_titles": {
+    "178D": "CRYSTAL STRUCTURE OF A DNA DUPLEX CONTAINING 8-HYDROXYDEOXYGUANINE.ADENINE BASE-PAIRS",
+    "183D": "X-RAY STRUCTURE OF A DNA DECAMER CONTAINING 7, 8-DIHYDRO-8-OXOGUANINE",
+    "8BAF": "Non-canonical quadruplex containing the oxidation product 8-oxoguanine",
+    "8BAG": "Copper(II) bound to a non-canonical quadruplex containing the damaged base 8-oxoguanine"
+  },
+  "interpretation_gate": {
+    "automated_search_complete_for_defined_query": true,
+    "title_and_method_metadata_saved": true,
+    "manual_duplex_and_pair_partner_review_required": true,
+    "protein_bound_entries_are_not_independent_free_DNA_replicates": true,
+    "NMR_entries_require_separate_stratum": true
+  }
+}

@@ -1,0 +1,206 @@
+lock_version: "1.0"
+locked_at_kst: "2026-08-04T11:15:00+09:00"
+analysis_nature: "REFERENCE_AWARE_REPRODUCTION"
+blind_or_preregistered: false
+preknowledge:
+  - "The author and reviewer had already inspected archived 111D, 178D, and 183D pair parameters."
+  - "A 178D pilot was run before this lock solely to validate automatic versus explicit 8OG mapping."
+  - "New DSSR coordinate-derived values override archived values if they disagree."
+
+research_question: >-
+  Under one coordinate-recalculation pipeline and the fixed normal B-DNA
+  reference set, what deformation is shared by unoxidized 111D G:A and
+  178D 8OG:A, and what additional difference remains in 178D?
+
+structures:
+  normal_reference_v1:
+    - 119D
+    - 158D
+    - 167D
+    - 1BNA
+    - 1D29
+    - 1D49
+    - 1D65
+    - 1D89
+    - 1D98
+    - 1DN9
+    - 1JGR
+    - 2BNA
+    - 3BSE
+    - 3IXN
+    - 463D
+    - 476D
+    - 477D
+    - 4C64
+  targets:
+    111D:
+      role: "unoxidized_GA_matched_analog"
+      coordinate_source: "asu"
+      expected_pairs:
+        - ["A.DG4", "B.DA21"]
+        - ["A.DG9", "B.DA16"]
+    178D:
+      role: "8OG_A_case"
+      coordinate_source: "asu"
+      expected_pairs:
+        - ["B.8OG21", "A.DA4"]
+        - ["A.8OG9", "B.DA16"]
+    183D:
+      role: "8OG_C_sanity_case"
+      coordinate_source: "assembly1"
+      expected_unique_pair_count: 1
+      expected_pair_residue_numbers: [4, 7]
+
+input_snapshot:
+  endpoint_template: "https://files.rcsb.org/download/{PDB_ID}.cif"
+  assembly_template: "https://files.rcsb.org/download/{PDB_ID}-assembly1.cif"
+  policy: "Download all 21 ASU files in one batch; additionally download 183D assembly1. Preserve bytes and SHA-256."
+  retrieval_date_kst: "2026-08-04"
+  do_not_replace_after_results: true
+
+tool:
+  name: "X3DNA-DSSR Basic Academic"
+  executable: "tools_local/dssr-basic-v2.9.1/x3dna-dssr.exe"
+  version_banner: "v2.9.1-2026jul09"
+  executable_sha256: "2FBF5DD32DF8A66753486B00FDB2388E4188A81F9ED7251378B2FA889B82A7DC"
+  authenticode: "NotSigned"
+  command_options:
+    - "--more"
+    - "--json"
+    - "--nt-mapping=8OG:g"
+  pair_parameter_field: "pairs[].bp_params"
+  pair_parameter_order:
+    - shear_A
+    - stretch_A
+    - stagger_A
+    - buckle_deg
+    - propeller_deg
+    - opening_deg
+  explicitly_forbidden_field_for_primary_values: "pairs[].bp_simpleParams"
+
+pilot_mapping_result:
+  input: "178D.cif"
+  auto_and_explicit_json_sha256_identical: true
+  identical_sha256: "41263F83545CF7B3FA75FF0C2246344CD87118885315A0969CE86B4F172E114E"
+  decision: "Use explicit 8OG:g mapping in every production command."
+
+coordinate_and_model_rules:
+  primary_model: 1
+  preserve_raw_coordinates: true
+  preprocess_altloc: false
+  target_altloc_or_missing_required_atoms: "HOLD_TARGET_COORDINATE_QC"
+  reference_altloc_policy: >-
+    Retain the unmodified official input and DSSR result; if a selected
+    canonical pair contains a nontrivial alternate conformer or missing
+    required base atom, exclude that pair in QC and report both counts.
+  symmetry_rule: >-
+    Use ASU when the analyzed duplex or pair is complete in the ASU. Use the
+    official biological assembly when the archived target pair requires a
+    crystallographic mate. Use --symm only for a multi-model assembly.
+  structure_specific_symmetry:
+    183D: "Use official assembly1 without --symm if one model contains distinct A and A-2 chains; retain ASU run as an audit only."
+
+pair_recognition_and_deduplication:
+  unique_key: ["pdb_id", "model", "unordered_nt_endpoints"]
+  retain_raw_rows: true
+  reverse_duplicates: "collapse_after_orientation_audit"
+  target_pair_failure: "STOP_BEFORE_STATISTICS"
+
+orientation_normalization:
+  use_original_3dna_parameters: true
+  target_orders:
+    canonical_AT: "A_to_T"
+    canonical_GC: "G_to_C"
+    mismatch_111D: "G_to_A"
+    mismatch_178D: "8OG_to_A"
+    sanity_183D: "8OG_to_C"
+  reversal_rules:
+    M_minus_N:
+      flip_sign: ["shear_A", "buckle_deg"]
+      retain_sign: ["stretch_A", "stagger_A", "propeller_deg", "opening_deg"]
+    M_plus_N:
+      flip_sign: ["shear_A", "stretch_A", "stagger_A", "buckle_deg", "propeller_deg", "opening_deg"]
+      retain_sign: []
+  pair_type_source: "DSSR pairs[].bp separator (+ or -)"
+
+normal_reference_pair_rules:
+  include_only_structures_in_normal_reference_v1: true
+  allowed_residue_pairs:
+    - ["DA", "DT"]
+    - ["DG", "DC"]
+  require_dssr_name: "WC"
+  exclude_modified_or_damaged_bases: true
+  exclude_non_dna_pair: true
+  terminal_primary: "include"
+  terminal_sensitivity: "exclude first and last pair of each DSSR stem"
+  qc_violation_policy: "Record as QC exclusion, never silently delete. Preserve included and excluded results."
+
+analysis_blocks:
+  legacy_primary_absolute_3:
+    - "abs(stretch_A)"
+    - "abs(opening_deg)"
+    - "abs(propeller_deg)"
+  signed_6:
+    - "shear_A"
+    - "stretch_A"
+    - "stagger_A"
+    - "buckle_deg"
+    - "propeller_deg"
+    - "opening_deg"
+  absolute_6_sensitivity:
+    - "abs(shear_A)"
+    - "abs(stretch_A)"
+    - "abs(stagger_A)"
+    - "abs(buckle_deg)"
+    - "abs(propeller_deg)"
+    - "abs(opening_deg)"
+
+weighting_and_sensitivity:
+  primary_weighting: "pair_equal"
+  required_alternatives:
+    - "structure_equal"
+    - "leave_one_structure_out"
+    - "1D89_excluded"
+    - "terminal_excluded"
+    - "resolution_le_2.5_A"
+  robust_center_scale: "median_and_1.4826_MAD"
+  covariance_primary_reproduction: "empirical_covariance_with_pseudoinverse"
+  covariance_sensitivity: "Ledoit_Wolf_shrinkage_if_available"
+  bootstrap:
+    unit: "structure"
+    iterations: 5000
+    seed: 20260731
+
+required_outputs:
+  - "input_manifest_full_v1.csv"
+  - "dssr_run_manifest_full_v1.csv"
+  - "all_pairs_raw_full_v1.csv"
+  - "all_pairs_oriented_full_v1.csv"
+  - "target_pairs_full_v1.csv"
+  - "reference_pairs_full_v1.csv"
+  - "orientation_audit_full_v1.csv"
+  - "symmetry_audit_183D_full_v1.csv"
+  - "archived_vs_dssr_full_v1.csv"
+  - "coordinate_recalculation_v1.ipynb"
+  - "validation_report_full_v1.md"
+
+claim_gate:
+  pipeline_pass_requires:
+    - "all input and executable hashes recorded"
+    - "same DSSR build and options for all production inputs"
+    - "8OG mapping verified"
+    - "all five expected target pairs recovered after unique-pair collapse"
+    - "original bp_params used, not bp_simpleParams"
+    - "orientation and 183D symmetry explained"
+    - "important archived-versus-new differences traced"
+    - "numeric rerun reproducibility verified"
+  hold_conditions:
+    - "unverified 8OG atom mapping"
+    - "unreproduced 183D symmetry pair"
+    - "unverified orientation sign rule"
+    - "unresolved target missing atoms or alternate location"
+    - "unexplained reference pair mapping discrepancy"
+  interpretation_limit: >-
+    This is a case-based comparison of two independent crystal structures,
+    not an estimate of a general causal oxidation effect. Two sites inside
+    either structure are not independent biological replicates.

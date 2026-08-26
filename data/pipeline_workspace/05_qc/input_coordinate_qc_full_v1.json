@@ -1,0 +1,654 @@
+{
+  "status": "PASS_INPUT_QC",
+  "coordinate_file_count": 22,
+  "reference_structure_count": 18,
+  "review_files": [],
+  "records": [
+    {
+      "filename": "111D.cif",
+      "pdb_id": "111D",
+      "role": "target_or_audit",
+      "size_bytes": 97360,
+      "sha256": "dc1e545399021de8a069244b048f0b93b79ecff5e437d1af068b9aa43c27873e",
+      "atom_rows": 552,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.250",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "119D.cif",
+      "pdb_id": "119D",
+      "role": "normal_reference_v1",
+      "size_bytes": 113202,
+      "sha256": "99b75e0ac931966fab3dd31c4fe471175b29dde0d73b48f114ba19464e5e5fbc",
+      "atom_rows": 624,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "MG"
+      ],
+      "other_comp_ids_for_review": [
+        "MG"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.250",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "158D.cif",
+      "pdb_id": "158D",
+      "role": "normal_reference_v1",
+      "size_bytes": 101386,
+      "sha256": "a670dcac2c25cc3e0fc2d450cbbca45a0d610b123a4aa9e038a66ee41e38bee0",
+      "atom_rows": 481,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 20,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CA"
+      ],
+      "other_comp_ids_for_review": [
+        "CA"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.900",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "167D.cif",
+      "pdb_id": "167D",
+      "role": "normal_reference_v1",
+      "size_bytes": 97278,
+      "sha256": "1639e7fcb6996a4b20803835bc7cb0568469ac1c8b5726833338cec126716238",
+      "atom_rows": 448,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 20,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.300",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "178D.cif",
+      "pdb_id": "178D",
+      "role": "target_or_audit",
+      "size_bytes": 101166,
+      "sha256": "ae6c0c9f836b39c967c60d5c10f1356535e877116b111fb5e7b0b10634292f34",
+      "atom_rows": 564,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [
+        [
+          "1",
+          "A",
+          "9",
+          "8OG"
+        ],
+        [
+          "1",
+          "B",
+          "21",
+          "8OG"
+        ]
+      ],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [
+        {
+          "model": "1",
+          "chain": "A",
+          "seq_id": "9",
+          "comp_id": "8OG",
+          "missing_required_base_atoms": [],
+          "altlocs": []
+        },
+        {
+          "model": "1",
+          "chain": "B",
+          "seq_id": "21",
+          "comp_id": "8OG",
+          "missing_required_base_atoms": [],
+          "altlocs": []
+        }
+      ],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.500",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "183D-assembly1.cif",
+      "pdb_id": "183D",
+      "role": "target_or_audit",
+      "size_bytes": 62078,
+      "sha256": "e71965166aaafe5ea1bf249246f25bb18816ef63fd0b12bff3cb5638bf371151",
+      "atom_rows": 492,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 20,
+      "eight_og_residues": [
+        [
+          "1",
+          "A",
+          "4",
+          "8OG"
+        ],
+        [
+          "1",
+          "A-2",
+          "4",
+          "8OG"
+        ]
+      ],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [
+        {
+          "model": "1",
+          "chain": "A",
+          "seq_id": "4",
+          "comp_id": "8OG",
+          "missing_required_base_atoms": [],
+          "altlocs": []
+        },
+        {
+          "model": "1",
+          "chain": "A-2",
+          "seq_id": "4",
+          "comp_id": "8OG",
+          "missing_required_base_atoms": [],
+          "altlocs": []
+        }
+      ],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "183D.cif",
+      "pdb_id": "183D",
+      "role": "target_or_audit",
+      "size_bytes": 70292,
+      "sha256": "f1aa3a2493e8ce372e00725fa7a02a0a08089820d61a43019425c92bcb837e12",
+      "atom_rows": 246,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 10,
+      "eight_og_residues": [
+        [
+          "1",
+          "A",
+          "4",
+          "8OG"
+        ]
+      ],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [
+        {
+          "model": "1",
+          "chain": "A",
+          "seq_id": "4",
+          "comp_id": "8OG",
+          "missing_required_base_atoms": [],
+          "altlocs": []
+        }
+      ],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.600",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1BNA.cif",
+      "pdb_id": "1BNA",
+      "role": "normal_reference_v1",
+      "size_bytes": 100712,
+      "sha256": "76d550f32963de46f4f3c63caacb530f91a24f333fbc4312766d240b14e8cf30",
+      "atom_rows": 566,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.900",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1D29.cif",
+      "pdb_id": "1D29",
+      "role": "normal_reference_v1",
+      "size_bytes": 105709,
+      "sha256": "6596ebfbfe9886351170b572203d28a213fd960a06e033bed52d3a0295c3dce0",
+      "atom_rows": 522,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.500",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1D49.cif",
+      "pdb_id": "1D49",
+      "role": "normal_reference_v1",
+      "size_bytes": 105957,
+      "sha256": "5e1ea709562076adbe11b41e7719f5c63f01fd281f70deb8530b2d04a0265490",
+      "atom_rows": 519,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 20,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "MG"
+      ],
+      "other_comp_ids_for_review": [
+        "MG"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.500",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1D65.cif",
+      "pdb_id": "1D65",
+      "role": "normal_reference_v1",
+      "size_bytes": 101067,
+      "sha256": "3f274ee1fc270db5963f3626c9fc994ca58227e3e04ae42c096c4fcc0483c739",
+      "atom_rows": 557,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.200",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1D89.cif",
+      "pdb_id": "1D89",
+      "role": "normal_reference_v1",
+      "size_bytes": 208147,
+      "sha256": "1ede9b40dd8dc547a03185236cb0b1487fc2a987072ee5b189f908ae837c8125",
+      "atom_rows": 1513,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 72,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.300",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1D98.cif",
+      "pdb_id": "1D98",
+      "role": "normal_reference_v1",
+      "size_bytes": 96356,
+      "sha256": "03885e1d0debd2d8a25ab48579e05d785d8205e1b1087f8bd647735c260d53e2",
+      "atom_rows": 513,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.500",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1DN9.cif",
+      "pdb_id": "1DN9",
+      "role": "normal_reference_v1",
+      "size_bytes": 96364,
+      "sha256": "289623523e649af85aab488abbf05d84f560ccbe400f5ff995c50de610b9f691",
+      "atom_rows": 529,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.200",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "1JGR.cif",
+      "pdb_id": "1JGR",
+      "role": "normal_reference_v1",
+      "size_bytes": 210230,
+      "sha256": "4c9150fdd8403b1330af209dafc979c8299886c4aa7addbf1485ac213011a0a6",
+      "atom_rows": 640,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "MG",
+        "TL"
+      ],
+      "other_comp_ids_for_review": [
+        "MG",
+        "TL"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.2",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "2BNA.cif",
+      "pdb_id": "2BNA",
+      "role": "normal_reference_v1",
+      "size_bytes": 99749,
+      "sha256": "1750b422b5097571a660ab1264bbf0fc2daf97a9a163f6171504decb1faaf029",
+      "atom_rows": 569,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [],
+      "other_comp_ids_for_review": [],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.700",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "3BSE.cif",
+      "pdb_id": "3BSE",
+      "role": "normal_reference_v1",
+      "size_bytes": 147693,
+      "sha256": "bb0ced8048907ae9e550912f1c539a42340b969b4dda1af5b7e6f2127771dcce",
+      "atom_rows": 867,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 34,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CA"
+      ],
+      "other_comp_ids_for_review": [
+        "CA"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.6",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "3IXN.cif",
+      "pdb_id": "3IXN",
+      "role": "normal_reference_v1",
+      "size_bytes": 96854,
+      "sha256": "49febc3fdb315a33b6344312dabb7741f42001f360af73dc2be82faf03a8720d",
+      "atom_rows": 418,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 20,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CO"
+      ],
+      "other_comp_ids_for_review": [
+        "CO"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "2.87",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "463D.cif",
+      "pdb_id": "463D",
+      "role": "normal_reference_v1",
+      "size_bytes": 130381,
+      "sha256": "25484d9fa0460d96e40348b78dc8da059dc7bb5abe4cd1b002ccf08a6e0af24d",
+      "atom_rows": 602,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 22,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CA"
+      ],
+      "other_comp_ids_for_review": [
+        "CA"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.45",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "476D.cif",
+      "pdb_id": "476D",
+      "role": "normal_reference_v1",
+      "size_bytes": 170140,
+      "sha256": "651cbf908c3d303b8a752de84254349c55e98cacdc518a73670877551c338a0f",
+      "atom_rows": 579,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 22,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 10,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CA"
+      ],
+      "other_comp_ids_for_review": [
+        "CA"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.30",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "477D.cif",
+      "pdb_id": "477D",
+      "role": "normal_reference_v1",
+      "size_bytes": 117287,
+      "sha256": "c104af8cd60d1be068995abba72154ba91ec19b9d8f647c968ff224a4eb62c3e",
+      "atom_rows": 611,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 14,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "CA"
+      ],
+      "other_comp_ids_for_review": [
+        "CA"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.70",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "filename": "4C64.cif",
+      "pdb_id": "4C64",
+      "role": "normal_reference_v1",
+      "size_bytes": 171254,
+      "sha256": "f0aa31e31fcc2ffa8b4c5556e104663643e5789ece0713fd7540a8e3f5bb23eb",
+      "atom_rows": 618,
+      "models": [
+        "1"
+      ],
+      "model_count": 1,
+      "dna_residue_count": 24,
+      "eight_og_residues": [],
+      "altloc_atom_row_count": 0,
+      "missing_coordinate_row_count": 0,
+      "protein_comp_ids": [],
+      "nonwater_het_comp_ids": [
+        "MG"
+      ],
+      "other_comp_ids_for_review": [
+        "MG"
+      ],
+      "target_8og_qc": [],
+      "experimental_method": "X-RAY DIFFRACTION",
+      "resolution_A": "1.320",
+      "status": "PASS",
+      "issues": []
+    }
+  ]
+}

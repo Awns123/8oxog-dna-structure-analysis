@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or its derived tables, please cite this repository and the original PDB structures."
+title: "8-oxoG:A matched-structure analysis"
+type: software
+authors:
+  - family-names: "이"
+    given-names: "현신"
+version: 1.0.0
+date-released: 2026-08-26
+keywords:
+  - DNA structure
+  - 8-oxoG
+  - DSSR
+  - sensitivity analysis
+  - reproducibility

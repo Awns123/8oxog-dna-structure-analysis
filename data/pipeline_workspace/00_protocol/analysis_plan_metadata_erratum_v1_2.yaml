@@ -1,0 +1,18 @@
+erratum_version: "1.2"
+purpose: "Correct non-authoritative rounded timestamps in the immutable lock metadata."
+parent_lock_sha256: "e857e2cd7c4e45e0406b2f315cccd8362d5b664cdf49f89d2f8e30d915e91ece"
+parent_amendment_sha256: "6e02206b9d85b862942b302af2fae2773fadabbd83349bd0af1ca012eacedd6a"
+corrections:
+  analysis_plan_lock_v1.yaml:
+    declared_time_not_to_use: "2026-08-04T11:15:00+09:00"
+    filesystem_creation_time_kst: "2026-08-04T11:12:25.382+09:00"
+    filesystem_last_write_time_kst: "2026-08-04T11:12:25.383+09:00"
+  analysis_plan_amendment_v1_1.yaml:
+    declared_time_not_to_use: "2026-08-04T11:25:00+09:00"
+    filesystem_creation_time_kst: "2026-08-04T11:16:21.430+09:00"
+    filesystem_last_write_time_kst: "2026-08-04T11:16:44.355+09:00"
+interpretation: >-
+  The declared times were manually rounded labels and must not be treated as
+  observed audit times. File-system timestamps and SHA-256 sidecar creation
+  times are the applicable local audit evidence. No scientific rule, input,
+  inclusion decision, or expected result changed in this erratum.
